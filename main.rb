@@ -67,7 +67,7 @@ class Mastermind
    puts "Wanna play again?"
    puts "Y/N"
    playAgain = gets.strip
-   play if playAgain.upcase == "Y"
+   Mastermind.new.play if playAgain.upcase == "Y"
   end
   def won?
     @code.split('') == @guess
